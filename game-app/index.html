@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32"  href="favicon-32x32.png">
+    <title>Game App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="gameContainer">
+        <div class="header">
+            <h1>Rock Paper Scissors Game <span id="gameSpan"><a href="index.html">🎲</a></span></h1>
+        </div>
+        <h2 id="playerTitle">Player <span class="choice" id="playerTurn"></span> - Score: <span
+        id="playerScore"></span></h2>
+        <div class="playerContainer" id="player">
+            <img src="rock.png" title="Rock" class="icon" id="playerRock" onclick="select('rock')">
+            <img src="paper.png" title="Paper" class="icon" id="playerPaper" onclick="select('paper')">
+            <img src="scissors.png" title="Scissors" class="icon" id="playerScissors" onclick="select('scissors')">
+        </div>
+
+        <h2 id="computerTitle">Computer <span class="choice" id="computerTurn"></span> - Score: <span
+        id="computerScore"></span></h2>
+        <div class="playerContainer" id="computer">
+            <img src="rock.png" title="Rock" class="icon" id="computerRock">
+            <img src="paper.png" title="Paper" class="icon" id="computerPaper">
+            <img src="scissors.png" title="Scissors" class="icon" id="computerScissors">
+        </div>
+
+        <div class="resetContainer">
+            <i class="resetIcon fa-solid fa-rotate-right" title="Reset" onclick="resetAll()"></i>
+        </div>
+        <div class="resultContainer">
+            <h3 class="resultText" id="resultText"></h3>
+        </div>
+    </div>
+
+<script src="confetti.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

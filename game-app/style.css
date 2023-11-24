@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.gameContainer {
+  width: 500px;
+  border-radius: 20px;
+  background: rgba(121, 103, 103, 0.5);
+  -webkit-backdrop-filter: blur(19px);
+  backdrop-filter: blur(19px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  background: rgba(216, 216, 216, 0.5);
+  padding: 30px;
+  border-radius: 20px 20px 0px 0px;
+  text-shadow: 0px 0px 11px rgba(98, 0, 128, 1);
+}
+
+#gameSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+}
+
+.icon {
+  width: 120px;
+}
+
+.icon:hover {
+  opacity: .6;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.playerContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.resetContainer {
+  color: white;
+  text-align: center;
+}
+
+.resetIcon {
+  font-size: 30px;
+}
+
+.resetContainer:hover {
+  color: #5c0a0a;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.resultContainer {
+  text-align: center;
+}
+
+.resultText {
+  font-size: 40px;
+  margin: 20px;
+  color: white;
+  text-shadow: 0px 0px 7px rgba(0, 255, 21, 0.685);
+}
+
+#playerTitle {
+  text-shadow: 0px -1px 9px rgba(84, 221, 255, 1);
+}
+
+#computerTitle {
+  text-shadow: 0px 0px 11px rgba(255, 129, 130, 1);
+}
+
+.selected {
+  width: 120px;
+  border-radius: 50%;
+  border: 5px dashed #df73ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .6;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Mobile Design */
+@media (max-width:768px) {
+  .gameContainer {
+    border-radius: 0px;
+  }
+
+  .header {
+    padding: 20px;
+    border-radius: 0px;
+  }
+
+  .icon {
+    width: 65px;
+  }
+
+  .playerContainer {
+    margin-bottom: 50px;
+  }
+}
